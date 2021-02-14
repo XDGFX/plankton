@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PLANKTON - algae café</title>
+    <title>PLANKTON - algae products</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
@@ -30,19 +30,22 @@
                 style="position: absolute; z-index: -3; width: 10vw; top: 30%; left: 15%;">
             <img src="website/media/mongolia-foreground.png" class="rellax full" data-rellax-speed="-2"
                 data-rellax-zindex="-5" style="position: absolute; z-index: -5;"> -->
-            <img src="img/cafe.jpg" class="rellax full" data-rellax-speed="-7" data-rellax-zindex="-7"
-                style="position: absolute; z-index: -7">
+            <div class="height: 100vh">
+                <img src="img/bg.jpg" class="rellax full" data-rellax-speed="-7" data-rellax-zindex="-7"
+                    style="position: absolute; z-index: -7; height: 100vh;">
+            </div>
 
             <div class="rellax" data-rellax-speed="-2.5" data-rellax-zindex="-6"
-                style="position: absolute; top: 20%; width: 100%; z-index: -6">
-                <h1 class="title has-text-centered"
-                    style="font-size: 12vw; margin-top: -3vw; color: #fff; text-shadow: 0px 0px 200px black;">
-                    plankton
+                style="position: absolute; top: 20%; width: 50%; left: 25%; z-index: -6">
+                <img class="has-text-centered" src="img/logo-text-white.png">
+                <!-- <h1 class="title has-text-centered"
+                    style="font-size: 12vw; color: #fff; text-shadow: 0px 0px 200px black;">
+                plankton
                 </h1>
-                <p class="has-text-centered"
-                    style="margin: 0; color: #fff; text-shadow: 0px 0px 100px black; font-weight: 300; font-size: 2em;">
-                    algae café
-                </p>
+                <p class="has-text-centered subtitle"
+                    style="margin: 0; color: #fff; text-shadow: 0px 0px 10px black; font-weight: 700;">
+                    algae products
+                </p> -->
             </div>
             <div>
                 <p class="has-text-centered"
@@ -57,64 +60,65 @@
     </section>
 
     <section class="hero is-fullheight">
-        <div class="hero-body impact" style="z-index: -4;">
+        <div class="hero-body impact" style="z-index: -4; padding-top: 10em;">
 
             <div class="container">
                 <div class="columns">
-                    <div class="column is-vertical-centre">
-                        <div style="transform: translate(0,50%);">
+                    <div class="column">
 
-                            <p class="title">Discover plankton; the first all-green café.</p>
+                        <p class=" title">Discover plankton: all-green products.</p>
 
-                            <br>
-                            <div class="columns">
-                                <div class="column is-narrow is-vertical-center has-text-centered">
-                                    <span class="icon" style="width: 100%; min-width: 100px; ">
-                                        <i class="fas fa-spa fa-3x"></i>
-                                    </span>
-                                </div>
-                                <div class="column">
-                                    <p>Everything we serve is based on a foundation of algae, the most underappreciated
-                                        superfood.
-                                        <br><br>
-                                        It has proven health benefits, and is a much more sustainable nutition
-                                        alternative.</p>
-                                </div>
+                        <br>
+                        <div class="columns">
+                            <div class="column is-narrow is-vertical-center has-text-left">
+                                <span class="icon" style="width: 100%; min-width: 100px; ">
+                                    <i class="fas fa-spa fa-3x"></i>
+                                </span>
+                            </div>
+                            <div class="column">
+                                <p>Everything we sell is based on a foundation of algae, the most underappreciated
+                                    superfood.
+                                    <br><br>
+                                    It has proven health benefits, and is a sustainable, nutitional, alternative.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <img src="img/algae.png">
-                    </div>
+                </div>
+                <div class="column has-text-right">
+                    <img src="img/algae.png">
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <section style="position: relative;">
         <div class="has-text-centered">
-            <img id="scroller" src="img/cup-selection.jpg" class="full" style="height: 100vh; position: relative;">
-            <p
-                style="color: white; position: absolute; top: 50vh; left: 50vw; transform: translate(-50%, -50%); font-size: 2rem; font-weight: 600; text-shadow: 0px 0px 10px black;">
-                Configure your cup.</p>
+            <img id=" scroller" src="img/mockup.png" class="full" style="height: 100vh; position: relative;">
+            <p class="title"
+                style=" position: absolute; top: 20vh; left: 50vw; transform: translate(-50%, -50%); font-size: 2rem; font-weight: 600;">
+                <a href="/products.html">Discover our products <i class="fas fa-arrow-right"></i></a>
+            </p>
+
         </div>
     </section>
 
 
-    <!-- <footer class="footer has-background-white-ter">
+    <footer class="footer has-background-white-ter">
         <div class="content has-text-centered">
+            <br>
             <p>
                 <span class="icon is-small">
-                    <img src="website/media/mongolia-flag.svg">
+                    <i class="fas fa-seedling"></i>
                 </span>
-                <strong>Team Red Crayon</strong> by <a href="https://github.com/XDGFX">Callum Morrison</a>. Content from
-                <a href="https://unsplash.com/">Unsplash</a> and <a href="https://fontawesome.com/">Font Awesome</a>.
+                <strong>PLANKTON</strong> 2021.
                 <br>
-                Want to learn more about the rally? Head over to the official website - <a
-                    href="https://www.theadventurists.com/adventures/mongol-rally/">here!</a>
+                Content from <a href="https://unsplash.com/">Unsplash</a> and <a href="https://fontawesome.com/">Font
+                    Awesome</a>.
             </p>
         </div>
-    </footer> -->
+    </footer>
 
     <script>
         var rellax = new Rellax('.rellax');
