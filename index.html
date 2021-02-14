@@ -1,24 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>PLANKTON - algae café</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-pageloader@0.3.0/dist/css/bulma-pageloader.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="website/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script defer src="website/app.js"></script>
+    <!-- <link rel="shortcut icon" href="website/icons/favicon.ico"> -->
 </head>
 
-<body>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
-            </p>
+<body onload="removePageloader()">
+
+    <div id="pageloader" class="pageloader is-active"></div>
+
+    <section class="hero is-fullheight">
+        <div class="hero-body is-paddingless">
+
+            <!-- <img src="website/media/mongolia-front.png" class="rellax" data-rellax-speed="3" data-rellax-zindex="-3"
+                style="position: absolute; z-index: -3; width: 10vw; top: 30%; left: 15%;">
+            <img src="website/media/mongolia-foreground.png" class="rellax full" data-rellax-speed="-2"
+                data-rellax-zindex="-5" style="position: absolute; z-index: -5;"> -->
+            <img src="img/cafe.jpg" class="rellax full" data-rellax-speed="-7" data-rellax-zindex="-7"
+                style="position: absolute; z-index: -7">
+
+            <div class="rellax" data-rellax-speed="-2.5" data-rellax-zindex="-6"
+                style="position: absolute; top: 20%; width: 100%; z-index: -6">
+                <h1 class="title has-text-centered"
+                    style="font-size: 12vw; margin-top: -3vw; color: #fff; text-shadow: 0px 0px 200px black;">
+                    plankton
+                </h1>
+                <p class="has-text-centered"
+                    style="margin: 0; color: #fff; text-shadow: 0px 0px 100px black; font-weight: 300; font-size: 2em;">
+                    algae café
+                </p>
+            </div>
+            <div>
+                <p class="has-text-centered"
+                    style="position: absolute; z-index: -4; bottom: 3vh; width: 100%; color: #fff; font-weight: 600; text-shadow: 0px 0px 7px black;">
+                    discover more<br>
+                    <span class="icon">
+                        <i class="fas fa-sort-down fa-2x"></i>
+                    </span></p>
+            </div>
+
         </div>
     </section>
+
+    <section class="hero is-fullheight">
+        <div class="hero-body impact" style="z-index: -4;">
+
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-vertical-centre">
+                        <div style="transform: translate(0,50%);">
+
+                            <p class="title">Discover plankton; the first all-green café.</p>
+
+                            <br>
+                            <div class="columns">
+                                <div class="column is-narrow is-vertical-center has-text-centered">
+                                    <span class="icon" style="width: 100%; min-width: 100px; ">
+                                        <i class="fas fa-spa fa-3x"></i>
+                                    </span>
+                                </div>
+                                <div class="column">
+                                    <p>Everything we serve is based on a foundation of algae, the most underappreciated
+                                        superfood.
+                                        <br><br>
+                                        It has proven health benefits, and is a much more sustainable nutition
+                                        alternative.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="img/algae.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="position: relative;">
+        <div class="has-text-centered">
+            <img id="scroller" src="img/cup-selection.jpg" class="full" style="height: 100vh; position: relative;">
+            <p
+                style="color: white; position: absolute; top: 50vh; left: 50vw; transform: translate(-50%, -50%); font-size: 2rem; font-weight: 600; text-shadow: 0px 0px 10px black;">
+                Configure your cup.</p>
+        </div>
+    </section>
+
+
+    <!-- <footer class="footer has-background-white-ter">
+        <div class="content has-text-centered">
+            <p>
+                <span class="icon is-small">
+                    <img src="website/media/mongolia-flag.svg">
+                </span>
+                <strong>Team Red Crayon</strong> by <a href="https://github.com/XDGFX">Callum Morrison</a>. Content from
+                <a href="https://unsplash.com/">Unsplash</a> and <a href="https://fontawesome.com/">Font Awesome</a>.
+                <br>
+                Want to learn more about the rally? Head over to the official website - <a
+                    href="https://www.theadventurists.com/adventures/mongol-rally/">here!</a>
+            </p>
+        </div>
+    </footer> -->
+
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
 
 </html>
